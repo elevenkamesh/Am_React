@@ -1,1 +1,1 @@
-# Learning React by Build Swiggy  
+# Learning React by Building Swiggy  
