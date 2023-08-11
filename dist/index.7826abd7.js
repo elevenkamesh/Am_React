@@ -2947,15 +2947,973 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-const Heading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-    children: "Vanakam Da mapla "
-}, void 0, false, {
-    fileName: "App.js",
-    lineNumber: 4,
-    columnNumber: 6
-}, undefined);
+// import "index.css";
+const Header = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "header",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "logo-container",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "logo",
+                    src: "https://img.freepik.com/premium-vector/good-food-logo-template_79169-17.jpg?w=360"
+                }, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 9,
+                    columnNumber: 21
+                }, undefined)
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 8,
+                columnNumber: 16
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "nav-items",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Home"
+                        }, void 0, false, {
+                            fileName: "App.js",
+                            lineNumber: 13,
+                            columnNumber: 26
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "About"
+                        }, void 0, false, {
+                            fileName: "App.js",
+                            lineNumber: 14,
+                            columnNumber: 26
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Contact Us"
+                        }, void 0, false, {
+                            fileName: "App.js",
+                            lineNumber: 15,
+                            columnNumber: 26
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Cart"
+                        }, void 0, false, {
+                            fileName: "App.js",
+                            lineNumber: 16,
+                            columnNumber: 26
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "App.js",
+                    lineNumber: 12,
+                    columnNumber: 21
+                }, undefined)
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 11,
+                columnNumber: 21
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 7,
+        columnNumber: 11
+    }, undefined);
+};
+_c = Header;
+const Resturentcard = (props)=>{
+    const { resdata } = props;
+    const { name, cloudinaryImageId, avgRating, costForTwo, cuisines, locality } = resdata?.info;
+    console.log(resdata);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "res-card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "img-res",
+                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 29,
+                columnNumber: 16
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: name
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 31,
+                columnNumber: 16
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: [
+                    cuisines.join(", "),
+                    " "
+                ]
+            }, void 0, true, {
+                fileName: "App.js",
+                lineNumber: 32,
+                columnNumber: 16
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: [
+                    avgRating,
+                    " "
+                ]
+            }, void 0, true, {
+                fileName: "App.js",
+                lineNumber: 33,
+                columnNumber: 16
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: locality
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 34,
+                columnNumber: 16
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 28,
+        columnNumber: 11
+    }, undefined);
+};
+_c1 = Resturentcard;
+const resList = [
+    {
+        "info": {
+            "id": "3369",
+            "name": "Truffles",
+            "cloudinaryImageId": "cd832b6167eb9f88aeb1ccdebf38d942",
+            "locality": "Ashok Nagar",
+            "areaName": "St Marks Road",
+            "costForTwo": "₹450 for two",
+            "cuisines": [
+                "American",
+                "Desserts",
+                "Continental",
+                "Italian"
+            ],
+            "avgRating": 4.5,
+            "feeDetails": {
+                "restaurantId": "3369",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 2500
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 2500
+            },
+            "parentId": "218065",
+            "avgRatingString": "4.5",
+            "totalRatingsString": "10K+",
+            "sla": {
+                "deliveryTime": 20,
+                "lastMileTravel": 0.8,
+                "serviceability": "SERVICEABLE",
+                "slaString": "20 mins",
+                "lastMileTravelString": "0.8 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-08-11 23:30:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "20% OFF",
+                "subHeader": "UPTO ₹50"
+            },
+            "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/truffles-ashok-nagar-st-marks-road-bangalore-3369",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "23847",
+            "name": "Domino's Pizza",
+            "cloudinaryImageId": "fjqcvqfgqlw6h0atques",
+            "locality": "Rest House Road",
+            "areaName": "Brigade Road",
+            "costForTwo": "₹400 for two",
+            "cuisines": [
+                "Pizzas",
+                "Italian",
+                "Pastas",
+                "Desserts"
+            ],
+            "avgRating": 4.2,
+            "feeDetails": {
+                "restaurantId": "23847",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 2500
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 2500
+            },
+            "parentId": "2456",
+            "avgRatingString": "4.2",
+            "totalRatingsString": "5K+",
+            "sla": {
+                "deliveryTime": 25,
+                "serviceability": "SERVICEABLE",
+                "slaString": "25 mins",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-08-11 22:59:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "76% OFF",
+                "subHeader": "UPTO ₹100"
+            },
+            "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/dominos-pizza-rest-house-road-brigade-road-bangalore-23847",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "65797",
+            "name": "Leon's - Burgers & Wings (Leon Grill)",
+            "cloudinaryImageId": "r4ufflqojich0r29efvc",
+            "locality": "Koramangala",
+            "areaName": "Koramangala",
+            "costForTwo": "₹300 for two",
+            "cuisines": [
+                "American",
+                "Snacks",
+                "Turkish",
+                "Portuguese",
+                "Continental"
+            ],
+            "avgRating": 4.3,
+            "feeDetails": {
+                "restaurantId": "65797",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 5800
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 5800
+            },
+            "parentId": "371281",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "10K+",
+            "sla": {
+                "deliveryTime": 30,
+                "lastMileTravel": 6.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30 mins",
+                "lastMileTravelString": "6.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-08-12 04:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF",
+                "subHeader": "UPTO ₹100"
+            },
+            "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/leons-burgers-and-wings-leon-grill-koramangala-bangalore-65797",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "43836",
+            "name": "McDonald's",
+            "cloudinaryImageId": "ee5f8e06b300efc07c9fe3f4df40dfc4",
+            "locality": "MG Road",
+            "areaName": "Ashok Nagar",
+            "costForTwo": "₹400 for two",
+            "cuisines": [
+                "Burgers",
+                "Beverages",
+                "Cafe",
+                "Desserts"
+            ],
+            "avgRating": 4.1,
+            "feeDetails": {
+                "restaurantId": "43836",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 2500
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 2500
+            },
+            "parentId": "630",
+            "avgRatingString": "4.1",
+            "totalRatingsString": "10K+",
+            "sla": {
+                "deliveryTime": 18,
+                "lastMileTravel": 1.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "18 mins",
+                "lastMileTravelString": "1.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-08-12 02:45:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "30% OFF",
+                "subHeader": "UPTO ₹75"
+            },
+            "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/mcdonalds-mg-road-ashok-nagar-bangalore-43836",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "5938",
+            "name": "Burger King",
+            "cloudinaryImageId": "e33e1d3ba7d6b2bb0d45e1001b731fcf",
+            "locality": "Tasker Town",
+            "areaName": "Shivaji Nagar",
+            "costForTwo": "₹350 for two",
+            "cuisines": [
+                "Burgers",
+                "American"
+            ],
+            "avgRating": 4.1,
+            "feeDetails": {
+                "restaurantId": "5938",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 2500
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 2500
+            },
+            "parentId": "166",
+            "avgRatingString": "4.1",
+            "totalRatingsString": "10K+",
+            "sla": {
+                "deliveryTime": 23,
+                "lastMileTravel": 2.7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "23 mins",
+                "lastMileTravelString": "2.7 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-08-12 02:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "EVERY ITEM",
+                "subHeader": "@ ₹129"
+            },
+            "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/burger-king-tasker-town-shivaji-nagar-bangalore-5938",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "347868",
+            "name": "KFC",
+            "cloudinaryImageId": "56c9ab92bd79745fd152a30fa2525426",
+            "locality": "Cunnigham road",
+            "areaName": "Vasanth Nagar",
+            "costForTwo": "₹400 for two",
+            "cuisines": [
+                "Burgers",
+                "Biryani",
+                "American",
+                "Snacks",
+                "Fast Food"
+            ],
+            "avgRating": 3.7,
+            "feeDetails": {
+                "restaurantId": "347868",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 4000
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 4000
+            },
+            "parentId": "547",
+            "avgRatingString": "3.7",
+            "totalRatingsString": "1K+",
+            "sla": {
+                "deliveryTime": 23,
+                "lastMileTravel": 3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "23 mins",
+                "lastMileTravelString": "3.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-08-12 03:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "40% OFF",
+                "subHeader": "UPTO ₹80"
+            },
+            "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/kfc-cunnigham-road-vasanth-nagar-bangalore-347868",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "292664",
+            "name": "Kwality Walls Frozen Dessert and Ice Cream Shop",
+            "cloudinaryImageId": "o9vbz7tdbkav0gzdv4yk",
+            "locality": "3rd block",
+            "areaName": "Rajajinagar",
+            "costForTwo": "₹300 for two",
+            "cuisines": [
+                "Desserts",
+                "Ice Cream",
+                "Ice Cream Cakes"
+            ],
+            "avgRating": 4.6,
+            "feeDetails": {
+                "restaurantId": "292664",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 5000
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 5000
+            },
+            "parentId": "582",
+            "avgRatingString": "4.6",
+            "totalRatingsString": "1K+",
+            "sla": {
+                "deliveryTime": 30,
+                "lastMileTravel": 5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30 mins",
+                "lastMileTravelString": "5.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-08-11 22:05:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "30% OFF",
+                "subHeader": "UPTO ₹75"
+            },
+            "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/kwality-walls-frozen-dessert-and-ice-cream-shop-3rd-block-rajajinagar-bangalore-292664",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "124178",
+            "name": "Starbucks Coffee",
+            "cloudinaryImageId": "4df3497f1460dfd1ecd8125222f6d362",
+            "locality": "Ashok Nagar",
+            "areaName": "Lavelle Road",
+            "costForTwo": "₹400 for two",
+            "cuisines": [
+                "Beverages",
+                "Cafe",
+                "Snacks",
+                "Desserts",
+                "Bakery",
+                "Ice Cream"
+            ],
+            "avgRating": 4.2,
+            "feeDetails": {
+                "restaurantId": "124178",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3000
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3000
+            },
+            "parentId": "195515",
+            "avgRatingString": "4.2",
+            "totalRatingsString": "1K+",
+            "sla": {
+                "deliveryTime": 15,
+                "lastMileTravel": 0.5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "15 mins",
+                "lastMileTravelString": "0.5 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-08-11 23:59:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "20% OFF",
+                "subHeader": "UPTO ₹50"
+            },
+            "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/starbucks-coffee-ashok-nagar-lavelle-road-bangalore-124178",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "29673",
+            "name": "Natural Ice Cream",
+            "cloudinaryImageId": "on12tk5aqza0stxxsqhc",
+            "locality": "Ashok Nagar",
+            "areaName": "St Marks Road",
+            "costForTwo": "₹150 for two",
+            "cuisines": [
+                "Ice Cream",
+                "Desserts"
+            ],
+            "avgRating": 4.7,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "29673",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 2500
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 2500
+            },
+            "parentId": "2093",
+            "avgRatingString": "4.7",
+            "totalRatingsString": "5K+",
+            "sla": {
+                "deliveryTime": 16,
+                "lastMileTravel": 0.8,
+                "serviceability": "SERVICEABLE",
+                "slaString": "16 mins",
+                "lastMileTravelString": "0.8 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-08-12 00:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "20% OFF",
+                "subHeader": "UPTO ₹50"
+            },
+            "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/natural-ice-cream-ashok-nagar-st-marks-road-bangalore-29673",
+            "type": "WEBLINK"
+        }
+    }
+];
+const Body = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "body",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "search",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "text",
+                        placeholder: "Enter Dish Name..."
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 1040,
+                        columnNumber: 20
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        children: "Search"
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 1041,
+                        columnNumber: 20
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "App.js",
+                lineNumber: 1039,
+                columnNumber: 16
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "res-container",
+                children: resList.map((resto)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Resturentcard, {
+                        resdata: resto
+                    }, "resto.id", false, {
+                        fileName: "App.js",
+                        lineNumber: 1047,
+                        columnNumber: 26
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 1043,
+                columnNumber: 16
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 1038,
+        columnNumber: 11
+    }, undefined);
+};
+_c2 = Body;
+const Applayout = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "app",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 1061,
+                columnNumber: 16
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 1062,
+                columnNumber: 16
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 1060,
+        columnNumber: 11
+    }, undefined);
+};
+_c3 = Applayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(Heading);
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Applayout, {}, void 0, false, {
+    fileName: "App.js",
+    lineNumber: 1072,
+    columnNumber: 13
+}, undefined));
+var _c, _c1, _c2, _c3;
+$RefreshReg$(_c, "Header");
+$RefreshReg$(_c1, "Resturentcard");
+$RefreshReg$(_c2, "Body");
+$RefreshReg$(_c3, "Applayout");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
