@@ -13,7 +13,7 @@ const Body = () =>{
                     (
                         <Resturentcard key= "resto.id" resdata={resto}/>
                     ))}
-
+                    
               </div>
 
 
